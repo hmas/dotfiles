@@ -67,6 +67,8 @@ endfu
 
 nmap <leader>sb :call SplitScroll()<CR>
 
+nmap <leader>e :bn<CR>
+nmap <leader>w :bp<CR>
 
 "<CR><C-w>l<C-f>:set scrollbind<CR>
 
@@ -305,4 +307,6 @@ if filereadable($VIRTUAL_ENV . '/.vimrc')
     source $VIRTUAL_ENV/.vimrc
 endif
 
-set colorcolumn=79
+"set cc=79
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/

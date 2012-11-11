@@ -143,15 +143,19 @@ if [ "$vim" == "" ]; then
     vim="gvim -v"
 fi
 
-alias vim="$vim"
 
 # osx vim
-if [ -x "/Applications/MacVim.app/Contents/MacOS/Vim" ]; then
-    PATH=/Applications/MacVim.app/Contents/MacOS/:$PATH
+if [ -x "/Users/hm/Applications/MacVim.app/Contents/MacOS/Vim" ]; then
+    vim="/Users/hm/Applications/MacVim.app/Contents/MacOS/Vim"
 fi
+
+alias vim="$vim"
 
 PYTHONSTARTUP=~/.pythonrc.py
 export PYTHONSTARTUP
+
+export PATH="/Users/hm/Library/Homebrew/bin:$PATH"
+alias sshp="ssh hmaserrat.hhgames.ca"
 
 parse_git_branch ()
 {

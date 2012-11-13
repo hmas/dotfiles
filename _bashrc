@@ -156,6 +156,9 @@ export PYTHONSTARTUP
 
 export PATH="/Users/hm/Library/Homebrew/bin:$PATH"
 alias sshp="ssh hmaserrat.hhgames.ca"
+# Python searches these paths for modules
+#PYTHONPATH="~/p4/hmaserrt/work/str/scripts"
+#export PYTHONPATH
 
 parse_git_branch ()
 {
@@ -173,6 +176,7 @@ parse_svn_repository_root() {
 set -o emacs
 export EDITOR="$vim"
 export GIT_EDITOR="$vim"
+
 
 # Add git and svn branch names
 export PS1="$PS1\$(parse_git_branch)\$(parse_svn_branch) "

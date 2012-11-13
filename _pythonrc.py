@@ -83,6 +83,7 @@ import sys
 # Enable Color Prompts
 sys.ps1 = '%s>>> %s' % (_c['Green'], _c['Normal'])
 sys.ps2 = '%s... %s' % (_c['Red'], _c['Normal'])
+sys.path.append("~/p4/hmaserrt/work/str");
 
 # Enable Pretty Printing for stdout
 def my_displayhook(value):

@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/hm/pentaho/biserver-ce-4.5.0/pentaho-solutions'
+let g:netrw_dirhist_2='/home/hm/p4/hmaserrt/work/str/_design/basics/views/distaftfirsttap'
+let g:netrw_dirhist_3='/home/hm/refactored/.git'
+let g:netrw_dirhist_4='/home/hm/swrve/base'
+let g:netrw_dirhist_5='/home/hm/.ssh'
+let g:netrw_dirhist_6='/home/hm/repos/p4home/.git'

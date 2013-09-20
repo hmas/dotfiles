@@ -8,6 +8,8 @@ export CLICOLOR=1
 HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups
 # ... or force ignoredups and ignorespace
 HISTCONTROL=ignoreboth
+export HISTFILESIZE=
+export HISTSIZE=
 
 # append to the history file, don't overwrite it
 shopt -s histappend
@@ -101,6 +103,7 @@ if $TERM_IS_COLOR && ( dircolors --help && ls --color ) &> /dev/null; then
   alias grep='grep --color=auto'
   alias fgrep='fgrep --color=auto'
   alias egrep='egrep --color=auto'
+  alias ipython='/usr/bin/ipython -i  ~/dotfiles/_ipythonrc.py'
 else
   # No color, so put a slash at the end of directory names, etc. to differentiate.
   alias ls="ls -F"
@@ -176,6 +179,7 @@ parse_svn_repository_root() {
 set -o emacs
 export EDITOR="$vim"
 export GIT_EDITOR="$vim"
+export P4USER="hmaserrat"
 
 
 # Add git and svn branch names
